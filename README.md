@@ -8,5 +8,5 @@ https://www.jura.uni-frankfurt.de/61424487/hinweise_zur_abfassung_von_haus_und_s
 Bei Fragen, Beschwerden und Verbesserungsvorschlägen E-mail an: doehnerladen@gmail.com**
 
 Hier habe ich abgeschaut: 
-https://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation (besoonderst Dokumentation fand ich hilfreich insbesndere Teilt daher Juristische-Zitierweise-by-D0ehner viele Struckturen mit dem Stil von fruit)
+https://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation (besonderst Dokumentation fand ich hilfreich insbesondere Teilt daher Juristische-Zitierweise-by-D0ehner viele Struckturen mit dem Stil von fruit)
 https://openrewi.pubpub.org/zitierguide
