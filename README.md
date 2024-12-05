@@ -1,5 +1,5 @@
 # Juristische-Zitierweise-by-D0ehner
-**Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 
+Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3  und fruit e.V.
 
 Orientiert sich an den Vorgaben der Goethe-Universität Frankfurt am Main. 
 https://www.jura.uni-frankfurt.de/49827895/Leitfaden__Erstellung_von_Hausarbeiten 
