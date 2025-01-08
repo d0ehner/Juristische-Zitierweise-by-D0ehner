@@ -1,12 +1,17 @@
 # Juristische-Zitierweise-by-D0ehner
-Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3  und fruit e.V.
+I. Informationen zu Quellen und Richtlinien 
+Dieser Zitierstile Orientiert sich stark an dem des Vereins fruit - Freiburg Recht und IT e.V.
+und hat von diesem große Teile übernommen. 
+Link: https://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation
+Weitere Inspirationen und Ansätze wurden aus dem Zitationsblog und Zitierstil von OpenREWI entnommen. 
+Link: https://openrewi.pubpub.org/zitierguide
 
-Orientiert sich an den Vorgaben der Goethe-Universität Frankfurt am Main. 
-https://www.jura.uni-frankfurt.de/49827895/Leitfaden__Erstellung_von_Hausarbeiten 
-https://www.jura.uni-frankfurt.de/61424487/hinweise_zur_abfassung_von_haus_und_seminararbeiten.pdf
+Änderungen wurden vorgenommen um den Anforderungen einer wissenschaftlichen Hausarbeit nach folgenden Richtlinien gerecht zu werden: 
+https://www.jura.uni-frankfurt.de/49827895/Leitfaden__Erstellung_von_Hausarbeiten
 
-Bei Fragen, Beschwerden und Verbesserungsvorschlägen E-mail an: doehnerladen@gmail.com**
-
-Hier habe ich abgeschaut: 
-https://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation (besonderst Dokumentation fand ich hilfreich insbesondere Teilt daher Juristische-Zitierweise-by-D0ehner viele Struckturen mit dem Stil von fruit)
-https://openrewi.pubpub.org/zitierguide
+Diese Ausarbeitung erhebt keinen Anspruch auf Vollständigkeit und Richtigkeit.
+II. Kontakt 
+Falls Sie Fehler finden ,Verbesserungsvorschläge oder sonstige Anliegen bezüglich des Zitierstils haben, können Sie diese gerne wie folgt mir mitteilen: 
+Per Mail: doehnerladen@gmail.com
+Via Github: https://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner
+Ich versuche schnellstmöglich Ihre Anliegen zu bearbeiten. 
