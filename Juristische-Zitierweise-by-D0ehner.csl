@@ -1,17 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style class="note" version="1.0" default-locale="de-DE" xmlns="http://purl.org/net/xbiblio/csl">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>Juristische Zitierweise</title>
-    <id>http://www.zotero.org/styles/juristische-zitierweise</id>
-    <link href="http://www.zotero.org/styles/juristische-zitierweise" rel="self"/>
-    <link href="https://github.com/d0ehner/Juristische-Zitierweise" rel="documentation"/>
+    <title>Juristische Zitierweise08.01.08.2025 v5</title>
+    <id>http://www.zotero.org/styles/juristische-zitierweise0801082025-v3</id>
+    <link href="http://www.zotero.org/styles/chicago-note-bibliography" rel="self"/>
+    <link href="http://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner" rel="documentation"/>
+    <link href=" http://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation" rel="documentation"/>
+    <link href="http://openrewi.pubpub.org/zitierguide" rel="documentation"/>
+    <link href="http://www.jura.uni-frankfurt.de/49827895/Leitfaden__Erstellung_von_Hausarbeiten" rel="documentation"/>
     <author>
       <name>D0ehner</name>
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2024-12-05T21:39:17+00:00</updated>
+    <updated>2025-01-08T19:13:42+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -180,6 +183,27 @@
           </group>
           <text macro="locator_with_label"/>
         </if>
+        <else-if type="article-journal" match="any">
+          <choose>
+            <if match="any" variable="volume">
+              <group>
+                <text macro="author_inline"/>
+                <text variable="container-title" form="short"/>
+                <text variable="volume" suffix=" "/>
+                <date form="text" variable="issued" prefix="(" suffix="), "/>
+                <text variable="page-first"/>
+              </group>
+            </if>
+            <else>
+              <group>
+                <text macro="author_inline"/>
+                <text variable="container-title" form="short" prefix=", " suffix=" "/>
+                <date date-parts="year" form="text" variable="issued" suffix=", "/>
+                <text variable="page-first"/>
+              </group>
+            </else>
+          </choose>
+        </else-if>
         <else-if type="legal_case" match="any">
           <choose>
             <if match="all" variable="container-title">
@@ -245,14 +269,6 @@
             </choose>
           </group>
         </else-if>
-        <else-if type="article-journal" match="any">
-          <group>
-            <text macro="author_inline"/>
-            <text variable="container-title" form="short" prefix=", " suffix=" "/>
-            <date date-parts="year" form="text" variable="issued" suffix=", "/>
-            <text variable="page-first"/>
-          </group>
-        </else-if>
         <else-if type="webpage" match="any">
           <choose>
             <if match="none" variable="title-short">
@@ -288,22 +304,18 @@
             </else>
           </choose>
         </else-if>
+        <else-if type="chapter" match="any">
+          <group>
+            <text macro="author_inline" suffix=", "/>
+            <text variable="title" form="short" prefix="in: " suffix=","/>
+          </group>
+        </else-if>
         <else>
           <group font-weight="bold" delimiter=" ">
             <text value="Eintragstyp wird nicht unterstützt!" text-case="uppercase"/>
             <text variable="title" prefix=" (Titel: " suffix=")"/>
           </group>
         </else>
-        <else-if type="book chapter article-journal" match="any">
-        <choose>
-          <if match="any" variable="author">
-            <names variable="author"/>
-          </if>
-          <else>
-            <text term="anonymous" form="short" font-style="normal"/>
-          </else>
-        </choose>
-      </else-if>
       </choose>
     </layout>
   </citation>
@@ -330,6 +342,27 @@
             </group>
           </group>
         </if>
+        <else-if type="article-journal" match="any">
+          <group delimiter=", ">
+            <text macro="author_bibliography"/>
+            <text variable="title"/>
+            <group delimiter=" ">
+              <text variable="container-title"/>
+              <text macro="year_or_edition"/>
+            </group>
+            <group delimiter=" ">
+              <label variable="locator" form="short"/>
+              <text variable="page"/>
+            </group>
+          </group>
+          <group font-weight="bold" delimiter=", " prefix=" [zit.: " suffix="]">
+            <text macro="author_inline"/>
+            <group delimiter=" ">
+              <text variable="container-title" form="short"/>
+              <text macro="year_or_edition"/>
+            </group>
+          </group>
+        </else-if>
         <else-if type="entry-encyclopedia" match="any">
           <group delimiter=" ">
             <group delimiter=", ">
@@ -342,25 +375,6 @@
               <group font-weight="bold" delimiter=", ">
                 <text macro="author_inline"/>
                 <text variable="title" form="short"/>
-              </group>
-            </group>
-          </group>
-        </else-if>
-        <else-if type="article-journal" match="any">
-          <group>
-            <group>
-              <text macro="author_bibliography"/>
-              <text variable="title"/>
-              <text variable="container-title"/>
-              <date date-parts="year" form="text" variable="issued" suffix=", "/>
-              <text variable="page-first"/>
-            </group>
-            <group>
-              <group>
-                <text macro="author_inline" prefix="[zit.: " suffix=", "/>
-                <text variable="container-title" form="short" suffix=", "/>
-                <date date-parts="year" form="text" variable="issued" suffix=",  "/>
-                <text variable="page-first"/>
               </group>
             </group>
           </group>
