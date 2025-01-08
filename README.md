@@ -10,6 +10,7 @@ Link: https://openrewi.pubpub.org/zitierguide
 https://www.jura.uni-frankfurt.de/49827895/Leitfaden__Erstellung_von_Hausarbeiten
 
 Diese Ausarbeitung erhebt keinen Anspruch auf Vollständigkeit und Richtigkeit.
+
 II. Kontakt 
 Falls Sie Fehler finden ,Verbesserungsvorschläge oder sonstige Anliegen bezüglich des Zitierstils haben, können Sie diese gerne wie folgt mir mitteilen: 
 Per Mail: doehnerladen@gmail.com
