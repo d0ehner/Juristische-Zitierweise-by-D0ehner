@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="de-DE">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title> Juristische-Zitierweise-by-D0ehner v1.0.0</title>
-    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v093</id>
-    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v093"/>
+    <title> Juristische-Zitierweise-by-D0ehner v1.1.3</title>
+    <title-short> Juristische-Zitierweise-by-D0ehner v1.1.3</title-short>
+    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v113</id>
+    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v113"/>
     <link href="http://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner" rel="documentation"/>
     <link href=" http://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation" rel="documentation"/>
     <link href="http://openrewi.pubpub.org/zitierguide" rel="documentation"/>
@@ -14,7 +14,7 @@
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2025-01-09T21:48:08+00:00</updated>
+    <updated>2025-05-14T12:30:10+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -31,11 +31,21 @@
   </locale>
   <macro name="author_inline">
     <choose>
-      <if match="any" variable="author">
+      <if match="any" variable="editor translator">
+        <group delimiter="/">
+          <names variable="editor" font-style="italic">
+            <name form="short" delimiter="/ "/>
+          </names>
+          <names variable="translator" font-style="italic">
+            <name form="short" delimiter="/ "/>
+          </names>
+        </group>
+      </if>
+      <else-if match="any" variable="author">
         <names variable="author" font-style="italic">
           <name form="short" font-style="italic" delimiter="/" et-al-min="5" et-al-use-first="1" sort-separator=""/>
         </names>
-      </if>
+      </else-if>
       <else>
         <text term="anonymous" form="short" font-style="normal"/>
       </else>
@@ -103,11 +113,21 @@
   </macro>
   <macro name="author_bibliography">
     <choose>
-      <if match="any" variable="author">
+      <if match="any" variable="editor translator">
+        <group delimiter="/">
+          <names variable="editor" font-style="italic">
+            <name delimiter="/ " suffix=" (Hrsg.)"/>
+          </names>
+          <names variable="translator" font-style="italic">
+            <name delimiter="/ " suffix=" (Begr.)"/>
+          </names>
+        </group>
+      </if>
+      <else-if match="any" variable="author">
         <names variable="author" font-style="italic">
           <name delimiter="/" et-al-min="5" et-al-use-first="1" name-as-sort-order="all"/>
         </names>
-      </if>
+      </else-if>
       <else>
         <text term="anonymous" form="short" font-style="normal"/>
       </else>
@@ -635,3 +655,4 @@
     </layout>
   </bibliography>
 </style>
+
