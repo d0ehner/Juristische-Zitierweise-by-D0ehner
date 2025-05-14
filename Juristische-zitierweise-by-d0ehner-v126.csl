@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="de-DE">
   <info>
-    <title> Juristische-Zitierweise-by-D0ehner v1.2.6</title>
+    <title> Juristische-Zitierweise-by-D0ehner v1.2.9</title>
     <title-short> Juristische-Zitierweise-by-D0ehner</title-short>
-    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v126</id>
-    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v126"/>
+    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v129</id>
+    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v129"/>
     <link href="http://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner" rel="documentation"/>
     <link href=" http://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation" rel="documentation"/>
     <link href="http://openrewi.pubpub.org/zitierguide" rel="documentation"/>
@@ -14,7 +14,7 @@
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2025-05-14T20:55:08+00:00</updated>
+    <updated>2025-05-14T21:21:56+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -541,7 +541,7 @@
         </else-if>
         <else-if type="entry-encyclopedia" match="any">
           <group>
-            <group delimiter=",">
+            <group>
               <group delimiter=",">
                 <choose>
                   <if match="any" variable="container-title">
@@ -552,22 +552,25 @@
                   </else>
                 </choose>
               </group>
-              <text variable="title" prefix=" " suffix=","/>
-              <group suffix=", ">
+              <text variable="title" prefix=" "/>
+              <group>
                 <choose>
                   <if match="any" variable="volume">
-                    <text variable="volume" prefix=" "/>
+                    <text variable="volume" prefix=", " suffix=", "/>
                   </if>
+                  <else>
+                    <text value=", "/>
+                  </else>
                 </choose>
               </group>
               <text macro="edition"/>
-              <group suffix=", ">
+              <group>
                 <choose>
                   <if match="any" variable="collection-number">
-                    <text variable="collection-number" prefix=" "/>
+                    <text variable="collection-number" prefix=" " suffix=", "/>
                   </if>
                   <else>
-                    <text value=" "/>
+                    <text value=", "/>
                   </else>
                 </choose>
               </group>
