@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="de-DE">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title> Juristische-Zitierweise-by-D0ehner v1.2.6</title>
     <title-short> Juristische-Zitierweise-by-D0ehner</title-short>
@@ -15,7 +14,7 @@
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2025-05-14T20:46:28+00:00</updated>
+    <updated>2025-05-14T20:55:08+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -557,7 +556,7 @@
               <group suffix=", ">
                 <choose>
                   <if match="any" variable="volume">
-                    <text variable="volume" prefix=" " suffix=", "/>
+                    <text variable="volume" prefix=" "/>
                   </if>
                 </choose>
               </group>
@@ -567,6 +566,9 @@
                   <if match="any" variable="collection-number">
                     <text variable="collection-number" prefix=" "/>
                   </if>
+                  <else>
+                    <text value=" "/>
+                  </else>
                 </choose>
               </group>
               <text macro="place_and_date"/>
@@ -586,7 +588,7 @@
                 <else>
                   <group delimiter=",">
                     <text macro="author_inline"/>
-                    <text variable="title"/>
+                    <text variable="title" prefix=" "/>
                   </group>
                 </else>
               </choose>
