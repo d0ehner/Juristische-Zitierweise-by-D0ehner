@@ -2,10 +2,10 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="de-DE">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title> Juristische-Zitierweise-by-D0ehner v1.1.5</title>
+    <title> Juristische-Zitierweise-by-D0ehner v1.2.6</title>
     <title-short> Juristische-Zitierweise-by-D0ehner</title-short>
-    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v115</id>
-    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v115"/>
+    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v126</id>
+    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v126"/>
     <link href="http://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner" rel="documentation"/>
     <link href=" http://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation" rel="documentation"/>
     <link href="http://openrewi.pubpub.org/zitierguide" rel="documentation"/>
@@ -15,7 +15,7 @@
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2025-05-14T17:27:17+00:00</updated>
+    <updated>2025-05-14T20:46:28+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -216,7 +216,16 @@
             <if match="any" variable="volume">
               <group>
                 <text macro="author_inline"/>
-                <text variable="container-title" form="short"/>
+                <group prefix=",">
+                  <choose>
+                    <if match="any" variable="container-title-short">
+                      <text variable="container-title-short"/>
+                    </if>
+                    <else>
+                      <text variable="container-title"/>
+                    </else>
+                  </choose>
+                </group>
                 <text variable="volume" suffix=" "/>
                 <date form="text" variable="issued" prefix="(" suffix="), "/>
                 <text variable="page-first"/>
@@ -225,7 +234,16 @@
             <else>
               <group>
                 <text macro="author_inline"/>
-                <text variable="container-title" form="short" prefix=", " suffix=" "/>
+                <group>
+                  <choose>
+                    <if match="any" variable="container-title-short">
+                      <text variable="container-title-short"/>
+                    </if>
+                    <else>
+                      <text variable="container-title" prefix=", " suffix=" "/>
+                    </else>
+                  </choose>
+                </group>
                 <date date-parts="year" form="text" variable="issued" suffix=", "/>
                 <text variable="page-first"/>
               </group>
@@ -322,21 +340,23 @@
           </group>
         </else-if>
         <else-if type="entry-encyclopedia" match="any">
-          <group>
-            <choose>
-              <if match="any" variable="container-title">
-                <text variable="container-title" suffix=" "/>
-              </if>
-              <else-if match="any" variable="title-short">
-                <text macro="author_inline" suffix=", "/>
-                <text variable="title-short" suffix=" "/>
-              </else-if>
-              <else>
-                <text macro="author_inline" suffix=", "/>
-                <text variable="title" suffix=" "/>
-              </else>
-            </choose>
-          </group>
+          <choose>
+            <if match="any" variable="note">
+              <text variable="note" suffix=", "/>
+            </if>
+            <else-if match="any" variable="title-short">
+              <group delimiter=",">
+                <text macro="author_inline"/>
+                <text variable="title-short" suffix=", "/>
+              </group>
+            </else-if>
+            <else>
+              <group>
+                <text macro="author_inline"/>
+                <text variable="title" prefix=", " suffix=", "/>
+              </group>
+            </else>
+          </choose>
         </else-if>
         <else-if type="entry-dictionary" match="any">
           <group>
@@ -406,7 +426,14 @@
             <group font-weight="bold" delimiter=",">
               <text macro="author_inline"/>
               <group delimiter=" ">
-                <text variable="container-title" form="short"/>
+                <choose>
+                  <if match="any" variable="container-title-short">
+                    <text variable="container-title-short"/>
+                  </if>
+                  <else>
+                    <text variable="container-title"/>
+                  </else>
+                </choose>
                 <text macro="year_or_edition"/>
               </group>
             </group>
@@ -514,78 +541,57 @@
           </choose>
         </else-if>
         <else-if type="entry-encyclopedia" match="any">
-          <choose>
-            <if match="any" variable="container-title">
-              <group>
-                <text variable="title" suffix=", "/>
-                <text macro="author_bibliography" suffix=", "/>
+          <group>
+            <group delimiter=",">
+              <group delimiter=",">
                 <choose>
-                  <if match="any" variable="volume">
-                    <text variable="volume" suffix=", "/>
-                    <text macro="edition" suffix=", "/>
-                    <text macro="place_and_date" suffix=" "/>
+                  <if match="any" variable="container-title">
+                    <text variable="container-title" font-style="italic"/>
                   </if>
                   <else>
-                    <text macro="edition" suffix=", "/>
-                    <text macro="place_and_date" suffix=" "/>
+                    <text macro="author_bibliography"/>
                   </else>
                 </choose>
               </group>
-              <group prefix="[zit.: " suffix="]">
-                <group font-weight="bold" delimiter=",">
-                  <text variable="container-title" suffix=" "/>
-                </group>
+              <text variable="title" prefix=" " suffix=","/>
+              <group suffix=", ">
+                <choose>
+                  <if match="any" variable="volume">
+                    <text variable="volume" prefix=" " suffix=", "/>
+                  </if>
+                </choose>
               </group>
-            </if>
-            <else-if match="any" variable="title-short">
-              <group>
-                <group>
-                  <text macro="author_bibliography" suffix=", "/>
-                  <text variable="title" suffix=" "/>
-                  <choose>
-                    <if match="any" variable="volume">
-                      <text variable="volume" suffix=", "/>
-                      <text macro="edition" suffix=", "/>
-                      <text macro="place_and_date" suffix=" "/>
-                    </if>
-                    <else>
-                      <text macro="edition" suffix=", "/>
-                      <text macro="place_and_date"/>
-                    </else>
-                  </choose>
-                </group>
-                <group prefix="[zit.: " suffix="]">
-                  <group font-weight="bold" delimiter=",">
+              <text macro="edition"/>
+              <group suffix=", ">
+                <choose>
+                  <if match="any" variable="collection-number">
+                    <text variable="collection-number" prefix=" "/>
+                  </if>
+                </choose>
+              </group>
+              <text macro="place_and_date"/>
+            </group>
+            <group font-weight="bold" prefix=" [zit: " suffix="]">
+              <choose>
+                <if match="any" variable="note">
+                  <text variable="note"/>
+                </if>
+                <else-if match="any" variable="title-short">
+                  <group>
                     <text macro="author_inline"/>
-                    <text variable="title-short" prefix=" "/>
+                    <text variable="title-short" prefix=", " suffix=","/>
                   </group>
-                </group>
-              </group>
-            </else-if>
-            <else>
-              <group>
-                <text macro="author_bibliography" suffix=", "/>
-                <text variable="title" suffix=", "/>
-                <choose>
-                  <if match="any" variable="volume">
-                    <text variable="volume" suffix=", "/>
-                    <text macro="edition" suffix=", "/>
-                    <text macro="place_and_date" suffix=" "/>
-                  </if>
-                  <else>
-                    <text macro="edition" suffix=", "/>
-                    <text macro="place_and_date"/>
-                  </else>
-                </choose>
-              </group>
-              <group font-weight="normal" prefix="[zit.: " suffix="]">
-                <group font-weight="bold" delimiter=",">
-                  <text macro="author_inline"/>
-                  <text variable="title"/>
-                </group>
-              </group>
-            </else>
-          </choose>
+                  <text value=""/>
+                </else-if>
+                <else>
+                  <group delimiter=",">
+                    <text macro="author_inline"/>
+                    <text variable="title"/>
+                  </group>
+                </else>
+              </choose>
+            </group>
+          </group>
         </else-if>
         <else-if type="entry-dictionary" match="any">
           <choose>
