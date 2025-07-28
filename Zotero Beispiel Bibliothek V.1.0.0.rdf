@@ -1,0 +1,704 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:dcterms="http://purl.org/dc/terms/">
+    <bib:Book rdf:about="#item_470">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>München</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>C.H.Beck</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <dc:title>Imaginäes Buch</dc:title>
+        <dc:date>2081</dc:date>
+        <prism:edition>16., neu bearbeitete Auflage</prism:edition>
+    </bib:Book>
+    <bib:Book rdf:about="urn:isbn:978-3-406-81731-1">
+        <z:itemType>book</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Series><dc:title>Grundrisse des Rechts</dc:title></bib:Series>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>München</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>C.H. Beck</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rengier</foaf:surname>
+                        <foaf:givenName>Rudolf</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Strafrecht Allgemeiner Teil</dc:title>
+        <dc:date>2024</dc:date>
+        <z:language>ger</z:language>
+        <z:libraryCatalog>K10plus ISBN</z:libraryCatalog>
+        <dc:identifier>ISBN 978-3-406-81731-1</dc:identifier>
+        <prism:edition>16., neu bearbeitete Auflage</prism:edition>
+        <z:numPages>1</z:numPages>
+    </bib:Book>
+    <bib:Book rdf:about="urn:isbn:978-3-8252-2734-0">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Köln/Weimar/Wien</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Böhlau</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kroeschell</foaf:surname>
+                        <foaf:givenName>Karl</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cordes</foaf:surname>
+                        <foaf:givenName>Albrecht</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Karin Nehlsen-von</foaf:surname>
+                        <foaf:givenName>Stryk</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Deutsche Rechtsgeschichte</dc:title>
+        <dc:date>2008</dc:date>
+        <z:libraryCatalog>COinS</z:libraryCatalog>
+        <prism:volume>Bd. 1</prism:volume>
+        <dc:identifier>ISBN 978-3-8252-2734-0</dc:identifier>
+        <prism:edition>13., überarbeitete Auflage</prism:edition>
+        <z:numPages>XII, 366 S.</z:numPages>
+    </bib:Book>
+    <bib:Article rdf:about="#item_473">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>195</prism:volume>
+                <dc:title>Archiv für die civilistische Praxis</dc:title>
+                <dcterms:alternative>AcP</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Picker</foaf:surname>
+                        <foaf:givenName>Eduard</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Schadensersatz für das unerwünschte Kind („Wrongful birth“)  - Medizinischer Fortschritt als zivilisatorischer Rückschritt?</dc:title>
+        <dc:date>1995</dc:date>
+        <bib:pages>483-600</bib:pages>
+    </bib:Article>
+    <bib:Article rdf:about="#item_474">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>Versicherungsrecht</dc:title>
+                <dcterms:alternative>VersR</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gehrlein</foaf:surname>
+                        <foaf:givenName>Markus</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Ansprüche eines Nothelfers in Rettungsfällen</dc:title>
+        <dc:date>1998</dc:date>
+        <bib:pages>1330 -1440</bib:pages>
+    </bib:Article>
+    <bib:Document rdf:about="#item_475">
+        <z:itemType>case</z:itemType>
+        <dcterms:isPartOf>
+            <bib:CourtReporter>
+                <prism:number>4 C 17/90</prism:number>
+                <dc:title>NJW</dc:title>
+                <prism:volume>1991</prism:volume>
+            </bib:CourtReporter>
+        </dcterms:isPartOf>
+        <dcterms:abstract>1. Das Abstandsflächenrecht in § RHPFBAUO 1986 § 8 RhPfBauO 1986 stellt eine Regelung i. S. des Art. GG Artikel 14 GG Artikel 14 Absatz I 2 GG dar.
+    2. Die bauordnungsrechtliche Befreiungsvorschrift des § RHPFBAUO 1986 § 67 RHPFBAUO 1986 § 67 Absatz III Nr. 2 RhPfBauO 1986 (Härteklausel) ist vor dem Hintergrund der eigentumsrechtlichen Gewährleistung einerseits und der Sozialpflichtigkeit des Eigentums andererseits auszulegen. Sie ermöglicht es, die gem. Art. GG Artikel 14 GG Artikel 14 Absatz I 1 GG zu beachtenden Belange des Grundeigentümers, die öffentlichen Interessen an einer sozialgerechten Ordnung und die Belange Dritter im Einzelfall in einen angemessenen Ausgleich zu bringen.
+    3. Es kann eine “unbeabsichtigte Härte” im Sinne einer bauordnungsrechtlichen Befreiungsvorschrift darstellen, wenn geändertes (neues) Abstandsflächenrecht eine Nutzungsänderung eines in früherer Zeit legal errichteten Gebäudes verhindert.
+    4. Eine Auslegung, nach der eine bauordnungsrechtliche Befreiungsvorschrift nur bodenrechtliche, d. h. grundstücksbezogene Interessen des Grundeigentümers erfaßt, steht mit Art. GG Artikel 14 GG Artikel 14 Absatz I GG in Einklang.
+    5. Ein Bestandsschutz, soweit damit eine eigenständige Anspruchsgrundlage gemeint sein soll, besteht nicht, wenn eine gesetzliche Regelung i. S. des Art. GG Artikel 14 GG Artikel 14 Absatz I 2 GG vorhanden ist.</dcterms:abstract>
+        <z:shortTitle>Abstandsflächenrecht und Eigentumsgarantie  zur Fussnote †</z:shortTitle>
+        <dc:description>Display Title: BVerwG, 16-05-1991 - 4 C 17/90 - Abstandsflächenrecht und Eigentumsgarantie  zur Fussnote † (NJW)
+Issue: 4 C 17/90
+Jurisdiction: de</dc:description>
+        <dc:title>BVerwG, 16-05-1991 - 4 C 17/90 - Abstandsflächenrecht und Eigentumsgarantie  zur Fussnote †</dc:title>
+        <z:authority>BVerwG</z:authority>
+        <dc:date>1991-05-16</dc:date>
+        <bib:pages>3293-3297</bib:pages>
+        <z:displayTitle>BVerwG, 16-05-1991 - 4 C 17/90 - Abstandsflächenrecht und Eigentumsgarantie  zur Fussnote † (NJW)</z:displayTitle>
+    </bib:Document>
+    <bib:Document rdf:about="#item_476">
+        <z:itemType>case</z:itemType>
+        <dcterms:isPartOf>
+            <bib:CourtReporter>
+                <prism:number>1 BvR 400/51</prism:number>
+                <prism:volume>7</prism:volume>
+            </bib:CourtReporter>
+        </dcterms:isPartOf>
+        <z:shortTitle>Lüth, Lüth-Urteil</z:shortTitle>
+        <dc:description>Issue: 1 BvR 400/51
+jurisdiction: de
+genre: Urt.</dc:description>
+        <dc:title>BVerfG, 15.01.1958 - 1 BvR 400/51 - Lüth, Lüth-Urteil</dc:title>
+        <z:authority>BVerfG</z:authority>
+        <dc:date>1958-01-15</dc:date>
+        <bib:pages>198</bib:pages>
+    </bib:Document>
+    <bib:Document rdf:about="#item_477">
+        <z:itemType>case</z:itemType>
+        <dcterms:isPartOf>
+            <bib:CourtReporter>
+                <prism:number>1 BvL 77/78</prism:number>
+                <prism:volume>58</prism:volume>
+            </bib:CourtReporter>
+        </dcterms:isPartOf>
+        <z:shortTitle>Nassauskiesung</z:shortTitle>
+        <dc:description>Issue: 1 BvL 77/78
+jurisdiction: de
+genre: Beschl.</dc:description>
+        <z:history>Nassauskiesung</z:history>
+        <dc:title>BVerfG, 15.07.1981 - 1 BvL 77/78 - Nassauskiesung</dc:title>
+        <z:authority>BVerfG</z:authority>
+        <dc:date>1981-07-15</dc:date>
+        <bib:pages>300</bib:pages>
+    </bib:Document>
+    <bib:Document rdf:about="#item_478">
+        <z:itemType>case</z:itemType>
+        <dcterms:isPartOf>
+            <bib:CourtReporter>
+               <prism:number>1 BvR 435/68</prism:number>
+            </bib:CourtReporter>
+        </dcterms:isPartOf>
+        <z:shortTitle>Mephisto</z:shortTitle>
+        <dc:description>Issue: 1 BvR 435/68
+jurisdiction: de
+genre: Beschl.</dc:description>
+        <z:history>Mephisto</z:history>
+        <dc:title>BVerfG, 24.02.1971 - 1 BvR 435/68 - Mephisto</dc:title>
+        <z:authority>BVerfG</z:authority>
+        <dc:date>1971-02-24</dc:date>
+    </bib:Document>
+    <bib:Document rdf:about="http://www.lto.de/recht/studium-referendariat/s/von-porto- ueber-bordeaux-nach-bourdeaux-stille-post-fuer-jura-erstsmester">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>LTO-Karriere</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schimmel</foaf:surname>
+                        <foaf:givenName>Roland</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Von Porto über Bordeaux nach Bourdeaux: Stille Post für Jura-Erstsemester</dc:title>
+        <dcterms:abstract>Erzählt werden soll die Geschichte einer Sächsin, die nach Porto wollte, stattdessen ein Ticket nach Bordeaux bekam und dann nur noch bis zum Amtsgericht Stuttgart-Bad Cannstatt ging statt nach Portugal zu fliegen. Was die Richterin aus den Urlaubsplänen der Frau machte und wie Jura-Erstsemester daraus lernen können, berichtet Roland Schimmel.</dcterms:abstract>
+        <dc:date>29.09.2012</dc:date>
+        <z:language>de</z:language>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.lto.de/recht/studium-referendariat/s/von-porto- ueber-bordeaux-nach-bourdeaux-stille-post-fuer-jura-erstsmester</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-08 23:43:29</dcterms:dateSubmitted>
+    </bib:Document>
+    <bib:Document rdf:about="http://www.lto.de/recht/studium-referendariat/s/testartikel">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website><dc:title>LTO-Karriere</dc:title></z:Website>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mustermann</foaf:surname>
+                        <foaf:givenName>Max</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Test Artikel</dc:title>
+        <dc:date>29.09.2069</dc:date>
+        <z:language>de</z:language>
+        <z:shortTitle>Test Artikel auf Lto</z:shortTitle>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://www.lto.de/recht/studium-referendariat/s/testartikel</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-01-08 23:43:29</dcterms:dateSubmitted>
+    </bib:Document>
+    <rdf:Description rdf:about="#item_481">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+               <prism:volume>16., neu bearbeitete Auflage</prism:volume>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Dulichion</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>von Dulichion</foaf:surname>
+                        <foaf:givenName>Odysseus</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Vorstellung einer Sonstigen Quelle</dc:title>
+        <dc:date>1.1.2001</dc:date>
+        <z:language>ger</z:language>
+        <z:shortTitle>Sonstige Quelle</z:shortTitle>
+        <dcterms:dateSubmitted>2025-01-09</dcterms:dateSubmitted>
+        <dc:description>xxxxxxxxx</dc:description>
+    </rdf:Description>
+    <bib:Legislation rdf:about="#item_482">
+        <z:itemType>statute</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Deutscher Bundestag</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <z:language>de-DE</z:language>
+        <z:shortTitle>Beschlussempfehlung und Bericht des Ausschusses für Menschenrechte und humanitäre Hilfe (17. Ausschuss)</z:shortTitle>
+        <z:code>Drucksache 18/7349</z:code>
+        <z:session>18. Wahlperiode</z:session>
+        <dc:title>Artikelgesetz zur Änderung der betreffenden Rechtsvorschriften</dc:title>
+        <z:codeNumber>BT-Drs. 18/7349</z:codeNumber>
+        <dc:date>26.01.2016</dc:date>
+    </bib:Legislation>
+    <bib:BookSection rdf:about="urn:isbn:978-3-11-025528-7%20978-3-11-024010-8">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-3-11-025528-7 978-3-11-024010-8</dc:identifier>
+                <dc:title>Festschrift für Claus Roxin zum 80. Geburtstag am 15. Mai 2011: Strafrecht als Scientia Universalis</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Berlin/New York</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>De Gruyter</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Beckemper</foaf:surname>
+                        <foaf:givenName>Katharina</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:contributors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Achenbach</foaf:surname>
+                        <foaf:givenName>Hans</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Amelung</foaf:surname>
+                        <foaf:givenName>Knut</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bottke</foaf:surname>
+                        <foaf:givenName>Wilfried</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                       <foaf:surname>Bernhard Haffke</foaf:surname>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Heinrich</foaf:surname>
+                        <foaf:givenName>Manfred</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jäger</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schünemann</foaf:surname>
+                        <foaf:givenName>Bernd</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wolter</foaf:surname>
+                        <foaf:givenName>Jürgen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:contributors>
+        <dc:title>Unvernunft als Zurechnungskriterium in den „Retterfällen“</dc:title>
+        <dcterms:abstract>Diese Festschrift ist dem unbestrittenen Haupt der deutschen Strafrechtswissenschaft gewidmet, der in Deutschland wie in zahlreichen anderen Rechtskulturen mit großer Ausstrahlungskraft gewirkt hat.This commemorative publication is dedicated to the undisputed authority on German criminal law studies, whose appeal extended beyond Germany to numerous other legal cultures as well.Bernd Schünemann, Universität München; Christian Jäger, Universität Bayreuth; et al</dcterms:abstract>
+        <dc:date>2011</dc:date>
+        <z:language>ger</z:language>
+        <z:shortTitle>FS Roxin</z:shortTitle>
+        <z:libraryCatalog>K10plus ISBN</z:libraryCatalog>
+        <dc:description>DOI: 10.1515/9783110255287</dc:description>
+        <bib:pages>397</bib:pages>
+    </bib:BookSection>
+    <bib:BookSection rdf:about="urn:isbn:978-3-504-06039-8%20978-3-504-38064-9">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-3-504-06039-8 978-3-504-38064-9</dc:identifier>
+                <dc:title>Festschrift für Karsten Schmidt: zum 70. Geburtstag</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Köln</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Verlag Dr. Otto Schmidt</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bachmann</foaf:surname>
+                        <foaf:givenName>Gregor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <bib:contributors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lutter</foaf:surname>
+                        <foaf:givenName>Marcus</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Priester</foaf:surname>
+                        <foaf:givenName>Hans-Joachim</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schön</foaf:surname>
+                        <foaf:givenName>Wolfgang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ulmer</foaf:surname>
+                        <foaf:givenName>Peter</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schmidt</foaf:surname>
+                        <foaf:givenName>Karsten</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:contributors>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bitter</foaf:surname>
+                        <foaf:givenName>Georg</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <dc:title>Die Änderung personengesellschaftsrechtlicher Satzungsbestandteile bei der KGaA</dc:title>
+        <dcterms:abstract>Mit diesem gewichtigen Band ehren namhafte Repräsentanten des Gesellschafts- und Insolvenzrechts Karsten Schmidt, einen der bedeutendsten deutschen Gesellschaftsrechtler, aus Anlass seines 70. Geburtstags. Mehr als 100 Wissenschaftler und Praktiker haben durch spannende, grundlegende und wegweisende Beiträge eine hochkarätige Festschrift verfasst, die ihresgleichen sucht und in die Hand jedes praktizierenden oder forschenden Gesellschaftsrechtlers gehört. Die Bandbreite der Beiträge umfasst die Gebiete: Aktien- und Kapitalmarktrecht GmbH-Recht Personengesellschaftsrecht Wirtschaftsrecht Insolvenzrecht</dcterms:abstract>
+        <dc:date>2009</dc:date>
+        <z:language>ger</z:language>
+        <z:libraryCatalog>K10plus ISBN</z:libraryCatalog>
+        <dc:description>DOI: 10.9785/ovs.9783504380649</dc:description>
+        <bib:pages>41–57</bib:pages>
+    </bib:BookSection>
+    <rdf:Description rdf:about="urn:isbn:978-3-8114-1053-4">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dcterms:isPartOf>
+                    <bib:Series>
+                        <dc:title>Juris Zusatzmodul Justiz Staats- und Verfassungsrecht</dc:title>
+                    </bib:Series>
+                </dcterms:isPartOf>
+                <dc:identifier>ISBN 978-3-8114-1053-4</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Heidelberg</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>C.F. Müller Verlag</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kahl</foaf:surname>
+                        <foaf:givenName>Wolfgang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Waldhoff</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Walter</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Bonner Kommentar zum Grundgesetz</dc:title>
+        <dc:date>2021</dc:date>
+        <z:language>ger</z:language>
+        <z:libraryCatalog>K10plus ISBN</z:libraryCatalog>
+        <dc:description>Losblattsammlung</dc:description>
+        <prism:edition>1. Aufl. 2021, 214. Lieferung 12.2021</prism:edition>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:isbn:978-3-406-81310-8">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-3-406-81310-8</dc:identifier>
+                <dc:title>MüKomm</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>München</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>C.H. Beck</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Erb</foaf:surname>
+                        <foaf:givenName>Volker</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Schäfer</foaf:surname>
+                        <foaf:givenName>Jürgen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <dc:title>Münchener Kommentar zum Strafgesetzbuch</dc:title>
+        <dc:date>2024</dc:date>
+        <z:language>ger</z:language>
+        <z:libraryCatalog>K10plus ISBN</z:libraryCatalog>
+        <prism:edition>5. Auflage</prism:edition>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:isbn:978-3-406-71254-8">
+        <z:itemType>encyclopediaArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+               <dc:identifier>ISBN 978-3-406-71254-8</dc:identifier>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>München</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>C.H. Beck</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Joecks</foaf:surname>
+                        <foaf:givenName>Wolfgang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jäger</foaf:surname>
+                        <foaf:givenName>Christian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Strafgesetzbuch : Studienkommentar</dc:title>
+        <dc:date>2018</dc:date>
+        <z:libraryCatalog>COinS</z:libraryCatalog>
+        <prism:edition>12. Auflage</prism:edition>
+    </rdf:Description>
+    <bib:Book rdf:about="urn:isbn:978-3-406-81067-1">
+        <z:itemType>book</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Series><dc:title>Grundrisse des Rechts</dc:title></bib:Series>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>München</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>C. H. Beck</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rengier</foaf:surname>
+                        <foaf:givenName>Rudolf</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Strafrecht Besonderer Teil</dc:title>
+        <dc:date>2024</dc:date>
+        <z:language>ger</z:language>
+        <z:shortTitle>StR BT I</z:shortTitle>
+        <z:libraryCatalog>BnF ISBN</z:libraryCatalog>
+        <dc:subject>
+           <dcterms:LCC><rdf:value>345.430 26</rdf:value></dcterms:LCC>
+        </dc:subject>
+        <dc:identifier>ISBN 978-3-406-81067-1</dc:identifier>
+        <prism:edition>26., neu bearbeitete Auflage 2024</prism:edition>
+    </bib:Book>
+    <z:Collection rdf:about="#collection_28">
+        <dc:title>Aufsätze</dc:title>
+        <dcterms:hasPart rdf:resource="#item_473"/>
+        <dcterms:hasPart rdf:resource="#item_474"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_29">
+        <dc:title>Bundesdrucksachen</dc:title>
+        <dcterms:hasPart rdf:resource="#item_482"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_30">
+        <dc:title>Internetquellen</dc:title>
+        <dcterms:hasPart rdf:resource="http://www.lto.de/recht/studium-referendariat/s/von-porto- ueber-bordeaux-nach-bourdeaux-stille-post-fuer-jura-erstsmester"/>
+        <dcterms:hasPart rdf:resource="http://www.lto.de/recht/studium-referendariat/s/testartikel"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_31">
+        <dc:title>Kommentare</dc:title>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-406-81310-8"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-406-71254-8"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_32">
+        <dc:title>Losblattsammlung</dc:title>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-8114-1053-4"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_33">
+        <dc:title>Monographien</dc:title>
+        <dcterms:hasPart rdf:resource="#item_470"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-406-81731-1"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-8252-2734-0"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-406-81067-1"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_34">
+        <dc:title>Sammelwerke</dc:title>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-11-025528-7%20978-3-11-024010-8"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-3-504-06039-8%20978-3-504-38064-9"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_35">
+        <dc:title>Sonstige Quellen</dc:title>
+        <dcterms:hasPart rdf:resource="#item_481"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_36">
+        <dc:title>Urteile</dc:title>
+        <dcterms:hasPart rdf:resource="#item_475"/>
+        <dcterms:hasPart rdf:resource="#item_476"/>
+        <dcterms:hasPart rdf:resource="#item_477"/>
+        <dcterms:hasPart rdf:resource="#item_478"/>
+    </z:Collection>
+</rdf:RDF>
