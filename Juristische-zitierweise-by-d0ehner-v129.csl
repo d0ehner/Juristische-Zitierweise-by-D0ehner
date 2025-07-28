@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="de-DE">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title> Juristische-Zitierweise-by-D0ehner v1.2.9</title>
+    <title> Juristische-Zitierweise-by-D0ehner v1.2.13</title>
     <title-short> Juristische-Zitierweise-by-D0ehner</title-short>
-    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v129</id>
-    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v129"/>
+    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v1213</id>
+    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v1213"/>
     <link href="http://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner" rel="documentation"/>
     <link href=" http://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation" rel="documentation"/>
     <link href="http://openrewi.pubpub.org/zitierguide" rel="documentation"/>
@@ -14,7 +15,7 @@
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2025-05-14T21:21:56+00:00</updated>
+    <updated>2025-07-28T17:24:16+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -211,43 +212,56 @@
           <text macro="locator_with_label"/>
         </if>
         <else-if type="article-journal" match="any">
-          <choose>
-            <if match="any" variable="volume">
-              <group>
-                <text macro="author_inline"/>
-                <group prefix=",">
-                  <choose>
-                    <if match="any" variable="container-title-short">
-                      <text variable="container-title-short"/>
-                    </if>
-                    <else>
-                      <text variable="container-title"/>
-                    </else>
-                  </choose>
+          <group>
+            <choose>
+              <if match="any" variable="volume">
+                <group delimiter=", ">
+                  <text macro="author_inline"/>
+                  <group>
+                    <choose>
+                      <if match="any" variable="container-title-short">
+                        <group>
+                          <text variable="container-title" form="short"/>
+                          <text variable="volume" suffix=" "/>
+                          <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
+                        </group>
+                      </if>
+                      <else>
+                        <group>
+                          <text variable="container-title" suffix=" "/>
+                          <text variable="volume" prefix=" "/>
+                          <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
+                        </group>
+                      </else>
+                    </choose>
+                  </group>
+                  <text variable="page-first"/>
                 </group>
-                <text variable="volume" suffix=" "/>
-                <date form="text" variable="issued" prefix="(" suffix="), "/>
-                <text variable="page-first"/>
-              </group>
-            </if>
-            <else>
-              <group>
-                <text macro="author_inline"/>
-                <group>
-                  <choose>
-                    <if match="any" variable="container-title-short">
-                      <text variable="container-title-short"/>
-                    </if>
-                    <else>
-                      <text variable="container-title" prefix=", " suffix=" "/>
-                    </else>
-                  </choose>
+              </if>
+              <else>
+                <group delimiter=", ">
+                  <text macro="author_inline"/>
+                  <group>
+                    <choose>
+                      <if match="any" variable="container-title-short">
+                        <group>
+                          <text variable="container-title" form="short" suffix=" "/>
+                          <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
+                        </group>
+                      </if>
+                      <else>
+                        <group>
+                          <text variable="container-title" suffix=" "/>
+                          <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
+                        </group>
+                      </else>
+                    </choose>
+                  </group>
+                  <text variable="page-first"/>
                 </group>
-                <date date-parts="year" form="text" variable="issued" suffix=", "/>
-                <text variable="page-first"/>
-              </group>
-            </else>
-          </choose>
+              </else>
+            </choose>
+          </group>
         </else-if>
         <else-if type="legal_case" match="any">
           <group>
@@ -418,11 +432,11 @@
             </group>
             <group delimiter=" ">
               <label variable="locator" form="short"/>
-              <text macro="locator_page_range"/>
+              <text variable="page-first"/>
             </group>
           </group>
           <group font-weight="normal" delimiter=" " prefix=" [zit.: " suffix="]">
-            <group font-weight="bold" delimiter=",">
+            <group font-weight="bold" delimiter=", ">
               <text macro="author_inline"/>
               <group delimiter=" ">
                 <choose>
