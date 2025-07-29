@@ -1,10 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="de-DE">
+  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title> Juristische-Zitierweise-by-D0ehner v1.2.19</title>
+    <title> Juristische-Zitierweise-by-D0ehner v1.2.22</title>
     <title-short> Juristische-Zitierweise-by-D0ehner</title-short>
-    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v1219</id>
-    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v1219"/>
+    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v1222</id>
+    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v1222"/>
     <link href="http://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner" rel="documentation"/>
     <link href=" http://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation" rel="documentation"/>
     <link href="http://openrewi.pubpub.org/zitierguide" rel="documentation"/>
@@ -14,7 +15,7 @@
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2025-07-29T07:51:25+00:00</updated>
+    <updated>2025-07-29T08:44:18+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -218,9 +219,16 @@
                   <text macro="author_inline"/>
                   <group>
                     <choose>
-                      <if match="any" variable="container-title-short">
+                      <if match="any" variable="container-title-short title-short">
                         <group>
-                          <text variable="container-title" form="short"/>
+                          <choose>
+                            <if match="any" variable="container-title-short">
+                              <text variable="container-title" form="short"/>
+                            </if>
+                            <else>
+                              <text variable="title-short"/>
+                            </else>
+                          </choose>
                           <text variable="volume" suffix=" "/>
                           <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>
                         </group>
@@ -355,16 +363,16 @@
           <group>
             <choose>
               <if match="any" variable="title-short">
-                <text variable="title-short"/>
+                <text variable="title-short" suffix=" "/>
               </if>
               <else-if match="none" variable="container-title">
                 <group delimiter=", ">
                   <text macro="author_inline"/>
-                  <text variable="title"/>
+                  <text variable="title" suffix=", "/>
                 </group>
               </else-if>
               <else>
-                <text variable="container-title"/>
+                <text variable="container-title" suffix=", "/>
               </else>
             </choose>
           </group>
@@ -373,16 +381,16 @@
           <group delimiter=", ">
             <choose>
               <if match="any" variable="title-short">
-                <text variable="title-short"/>
+                <text variable="title-short" suffix=", "/>
               </if>
               <else-if match="none" variable="container-title">
                 <group delimiter=", ">
                   <text macro="author_inline"/>
-                  <text variable="title"/>
+                  <text variable="title" suffix=", "/>
                 </group>
               </else-if>
               <else>
-                <text variable="container-title"/>
+                <text variable="container-title" suffix=", "/>
               </else>
             </choose>
           </group>
@@ -440,6 +448,9 @@
                   <if match="any" variable="container-title-short">
                     <text variable="container-title-short"/>
                   </if>
+                  <else-if match="any" variable="title-short">
+                    <text variable="title-short"/>
+                  </else-if>
                   <else>
                     <text variable="container-title"/>
                   </else>
@@ -450,28 +461,33 @@
           </group>
         </else-if>
         <else-if type="chapter" match="any">
-          <group delimiter=" ">
-            <text macro="author_bibliography" suffix=", "/>
-            <text variable="title" suffix=" "/>
-            <text value="in:" suffix=" "/>
-            <group suffix=", ">
-              <choose>
-                <if match="any" variable="container-author collection-editor">
-                  <group delimiter="/">
-                    <names variable="collection-editor">
-                      <name delimiter="/ " suffix=" (Hrsg.) "/>
-                    </names>
-                    <names variable="container-author">
-                      <name delimiter="/ "/>
-                    </names>
-                  </group>
-                </if>
-                <else>
-                  <text value="Achtung Hier fehlt der Buch Autor. Bitte Prüfen" strip-periods="false" font-weight="bold"/>
-                </else>
-              </choose>
+          <group delimiter=",  ">
+            <text macro="author_inline"/>
+            <group>
+              <text variable="title" suffix=" "/>
+              <text value="in:" suffix=" "/>
+              <group>
+                <choose>
+                  <if match="any" variable="container-author collection-editor">
+                    <group delimiter="/">
+                      <names variable="collection-editor">
+                        <name delimiter="/ " suffix=" (Hrsg.) "/>
+                      </names>
+                      <names variable="container-author">
+                        <name delimiter="/ "/>
+                      </names>
+                    </group>
+                  </if>
+                  <else>
+                    <text value="Achtung Hier fehlt der Buch Autor. Bitte Prüfen" strip-periods="false" font-weight="bold"/>
+                  </else>
+                </choose>
+              </group>
             </group>
-            <text variable="container-title" suffix=", "/>
+            <text variable="container-title"/>
+            <text macro="Volume Makro"/>
+            <text macro="edition"/>
+            <text macro="place_and_date"/>
             <text variable="page-first"/>
           </group>
           <group font-weight="bold" delimiter=", " prefix=" [zit.: " suffix="]">
@@ -560,7 +576,7 @@
           </choose>
         </else-if>
         <else-if type="entry-encyclopedia" match="any">
-          <group delimiter=", ">
+          <group delimiter=", " suffix=" ">
             <group>
               <choose>
                 <if match="any" variable="container-title">
@@ -577,13 +593,13 @@
                 </else>
               </choose>
             </group>
-            <text variable="volume"/>
+            <text variable="volume" suffix=", "/>
             <group>
-              <text variable="edition"/>
+              <text variable="edition" suffix=", "/>
               <text macro="place_and_date"/>
             </group>
           </group>
-          <group prefix="[zit.:" suffix="]">
+          <group prefix="[zit.: " suffix="]">
             <group font-weight="bold" delimiter=", ">
               <choose>
                 <if match="any" variable="title-short">
@@ -620,7 +636,7 @@
                 </else>
               </choose>
             </group>
-            <text variable="volume"/>
+            <text variable="volume" suffix=", "/>
             <group delimiter=" ">
               <text variable="edition"/>
               <text macro="place_and_date"/>
@@ -650,4 +666,3 @@
     </layout>
   </bibliography>
 </style>
-
