@@ -1,5 +1,9 @@
 # Juristische-Zitierweise-by-D0ehner
-I. Informationen zu Quellen und Richtlinien 
+I.
+
+Die Zitierweiße versucht den Anforderungen der Goethe-Universität Frankfurt zum Erstellen von Hausarbeiten des Fachbereichs Rechtswissenschaften zu entsprechen.
+
+II. Informationen zu Quellen und Richtlinien 
 
 Dieser Zitierstile orientiert sich stark an dem des Vereins fruit - Freiburg Recht und IT e.V.
 und hat von diesem große Teile übernommen. 
@@ -16,7 +20,7 @@ https://www.jura.uni-frankfurt.de/49827895/Leitfaden__Erstellung_von_Hausarbeite
 
 Diese Ausarbeitung erhebt keinen Anspruch auf Vollständigkeit und Richtigkeit.
 
-II. Kontakt 
+III. Kontakt 
 
 Falls Sie Fehler finden ,Verbesserungsvorschläge oder sonstige Anliegen bezüglich des Zitierstils haben, können Sie diese gerne wie folgt mir mitteilen: 
 
