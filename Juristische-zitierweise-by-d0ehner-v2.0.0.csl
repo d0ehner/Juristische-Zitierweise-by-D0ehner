@@ -2,10 +2,10 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" default-locale="de-DE">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title> Juristische-Zitierweise-by-D0ehner v2.0.0</title>
+    <title> Juristische-Zitierweise-by-D0ehner v2.0.1</title>
     <title-short> Juristische-Zitierweise-by-D0ehner</title-short>
-    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v200</id>
-    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v200"/>
+    <id>http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v201</id>
+    <link rel="self" href="http://www.zotero.org/styles/-juristische-zitierweise-by-d0ehner-v201"/>
     <link href="http://github.com/d0ehner/Juristische-Zitierweise-by-D0ehner" rel="documentation"/>
     <link href=" http://www.legaltech.uni-freiburg.de/fruit/projekte/zitieren/dokumentation" rel="documentation"/>
     <link href="http://openrewi.pubpub.org/zitierguide" rel="documentation"/>
@@ -15,7 +15,7 @@
       <email>doehnerladen@gmail.com</email>
     </author>
     <summary>Juristische Zitierweise für Hausarbeiten, Studienarbeiten, etc; persönliche Anpassung der Zitierweise von OpenReWi 1.3 und fruit e.V.</summary>
-    <updated>2025-07-29T15:36:03+00:00</updated>
+    <updated>2026-08-18T16:29:42+00:00</updated>
     <rights>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 License</rights>
   </info>
   <locale xml:lang="de-DE">
@@ -34,11 +34,8 @@
     <choose>
       <if match="any" variable="editor translator">
         <group delimiter="/">
-          <names variable="editor" font-style="italic">
-            <name form="short" delimiter="/ "/>
-          </names>
-          <names variable="translator" font-style="italic">
-            <name form="short" delimiter="/ "/>
+          <names variable="editor translator" font-style="italic">
+            <name form="short" delimiter="/"/>
           </names>
         </group>
       </if>
