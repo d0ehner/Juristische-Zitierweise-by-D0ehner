@@ -1,5 +1,5 @@
 # Juristische-Zitierweise-by-D0ehner
-I.
+I.Allgemeines
 
 Die Zitierweiße versucht den Anforderungen der Goethe-Universität Frankfurt zum Erstellen von Hausarbeiten des Fachbereichs Rechtswissenschaften zu entsprechen.
 
